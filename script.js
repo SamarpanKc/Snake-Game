@@ -24,6 +24,31 @@ function updating() {
   snake.pop();
 }
 
+function movement(event) {
+  if (event.key === "ArrowUp" || event.key === "W" || event.key === "w") {
+    // direction !== "Down" doesn't work , curerntly no solutions
+    direction = "UP";
+  } else if (
+    event.key === "ArrowDown" ||
+    event.key === "s" ||
+    event.key === "S"
+  ) {
+    direction = "DOWN";
+  } else if (
+    event.key === "ArrowLeft" ||
+    event.key === "a" ||
+    event.key === "A"
+  ) {
+    direction = "LEFT";
+  } else if (
+    event.key === "ArrowRight" ||
+    event.key === "d" ||
+    event.key === "D"
+  ) {
+    direction = "RIGHT";
+  }
+}
+
 function drawing() {
   filler.clearRect(0, 0, board.width, board.height); // Clear canvas
 
@@ -33,4 +58,10 @@ function drawing() {
   }
 }
 
-drawing();
+function loop() {
+  updating();
+  drawing();
+}
+
+game = setInterval(loop, 100);
+document.addEventListener("keydown", movement);
