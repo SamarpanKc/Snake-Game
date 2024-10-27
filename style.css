@@ -65,3 +65,13 @@ main {
   background-color: #20bf55;
   z-index: 2;
 }
+
+#board{
+  width: 50%;
+  height: 100%;
+  display: grid;
+  border-radius: 18px;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(20, 1fr);
+  grid-gap: 1px;
+}
