@@ -1,51 +1,66 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Telugu:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Telugu:wght@100..900&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
-body, html {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    padding: 0;
+body,
+html {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
-    width: 90vw;
-    height: 96vh;
-    border: #201A23 solid 2px;
-    border-radius: 19px;
-    display: flex;
-    /* align-items: center; */
-    justify-content: center;
-    font-family: "Noto Serif Telugu", serif;
+  width: 90vw;
+  height: 96vh;
+  border: #201a23 solid 2px;
+  border-radius: 19px;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  font-family: "Noto Serif Telugu", serif;
 }
 
 .hed {
-    color: #201A23;
-    margin-top: 19px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    font-size: 1.2rem;
-    text-transform: uppercase;
+  color: #201a23;
+  margin-top: 19px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.2rem;
+  text-transform: uppercase;
 }
-.hed .lists{
-    border-bottom: #201A23 solid 2px;
+.hed .lists {
+  border-bottom: #201a23 solid 2px;
 }
 .hed .lists ul {
-    margin-top: 16px;
-    width: 90vw;
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 19px;
-    font-size: 1rem;
-    font-weight: 600;
+  margin-top: 16px;
+  width: 90vw;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 19px;
+  font-size: 1rem;
+  font-weight: 600;
 }
 .hed .lists li {
-    display: flex;
+  display: flex;
+}
+main {
+  height: 80vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+.playground {
+  width: 90%;
+  height: 99.2%;
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+  background-color: #20bf55;
+  z-index: 2;
 }
