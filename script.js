@@ -33,7 +33,4 @@ function drawing() {
   }
 }
 
-function loop() {
-  updating();
-  drawing();
-}
+drawing();
