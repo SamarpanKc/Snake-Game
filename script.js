@@ -58,10 +58,4 @@ function drawing() {
   }
 }
 
-function loop() {
-  updating();
-  drawing();
-}
-
-game = setInterval(loop, 100);
-document.addEventListener("keydown", movement);
+drawing();
