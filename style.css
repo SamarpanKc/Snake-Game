@@ -12,6 +12,9 @@ body, html {
     margin: 0;
     padding: 0;
 }
+body{
+    background-image: url(css-pattern-by-magicpattern.png);
+}
 
 .container {
     width: 90vw;
@@ -22,18 +25,21 @@ body, html {
     /* align-items: center; */
     justify-content: center;
     font-family: "Noto Serif Telugu", serif;
+    /* background-color: #3cff81;    */
 }
 
 .hed {
     color: #201A23;
-    margin-top: 19px;
+    margin: 19px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     font-size: 1.2rem;
     text-transform: uppercase;
+
 }
+
 .hed .lists{
     border-bottom: #201A23 solid 2px;
 }
