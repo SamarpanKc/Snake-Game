@@ -13,16 +13,23 @@
           <h1>Snake Game</h1>
           <div class="lists">
             <ul>
-              <li style="list-style: none">Score</li>
-              <li style="list-style: none">Level</li>
-              <li style="list-style: none">Health</li>
+              <li style="list-style: none">Score:</li>
+              <li style="list-style: none">Level:</li>
+              <li style="list-style: none">Health:</li>
             </ul>
           </div>
         </div>
         <main>
           <div class="playground">
             <!-- sumit c-->
-            <canvas id="board" width="1000" height="1000"></canvas>
+            <p id="message"></p>
+            <button id="btnRestart" onclick="">
+              <span id="restart">Play Again!</span>
+            </button>
+            <button id="btn" onclick="startGame();">
+              <span id="start">Game Start</span>
+            </button>
+            <canvas id="board" width="1380" height="550"> </canvas>
           </div>
         </main>
       </nav>

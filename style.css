@@ -65,3 +65,59 @@ main {
   background-color: #20bf55;
   z-index: 2;
 }
+.playground #btn {
+  width: 90vw;
+  height: 80vh;
+  text-transform: uppercase;
+  position: absolute;
+  padding: 10px 20px;
+  background-color: #201a23;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: ease-in-out 0.5s;
+}
+.playground #start {
+  font-family: "Noto Serif Telugu", serif;
+  font-size: 6rem;
+  font-weight: 600;
+  color: #fff;
+  transition: color 0.3s ease-in-out;
+}
+
+.playground #start:hover {
+  color: #49d684;
+  transition: ease-in-out 0.3s;
+}
+
+#message {
+  color: #ff331d;
+  margin-top: 10px;
+  z-index: 3;
+  position: absolute;
+  text-align: center;
+  top: 45%;
+  left: 36%;
+  font-size: 4rem;
+  font-weight: 600;
+  /* display: none; */
+}
+
+#btnRestart {
+  width: 10vw;
+  height: 8vh;
+  background-color: #201a23;
+  color: #fff;
+  font-family: "Noto Serif Telugu", serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 12px;
+  transition: color 0.3s ease-in-out;
+  cursor: pointer;
+  position: absolute;
+  top: 60%;
+  left: 43%;
+  display: none;
+}
