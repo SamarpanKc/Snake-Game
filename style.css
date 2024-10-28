@@ -101,6 +101,7 @@ main {
   left: 36%;
   font-size: 4rem;
   font-weight: 600;
+  transition: all 0.5s;
   /* display: none; */
 }
 
@@ -120,4 +121,7 @@ main {
   top: 60%;
   left: 43%;
   display: none;
+  opacity: 1;
+  z-index: 10;
+  transition: all 0.5s;
 }

@@ -82,6 +82,7 @@ function gameOver() {
   isGameOver = true;
   document.getElementById("message").textContent = "GAME OVER";
   document.getElementById("btnRestart").style.display = "block"; // Show restart button
+  document.getElementById("btnRestart").style.opacity = "1";
   //   document.getElementById("btn").style.opacity = "1"; // Show start button again
 }
 //////////////////////////////////////
@@ -96,8 +97,15 @@ function startGame() {
     isGameOver = false;
     document.getElementById("message").textContent = "";
   }
-
+  document.getElementById("btn").style.display = "none";
   document.getElementById("btn").style.opacity = "0"; // Hide start button
   game = setInterval(loop, 200);
   document.addEventListener("keydown", movement);
 }
+
+const btnRestart = document.getElementById("btnRestart");
+
+btnRestart.addEventListener("click", () => {
+  btnRestart.style.opacity = "0";
+  startGame();
+});
